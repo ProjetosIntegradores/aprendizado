@@ -25,10 +25,10 @@ if ($conn->query($sql) === TRUE) {
 $conn->select_db($dbname);
 
 // Criar a tabela de login
-$sql = "CREATE TABLE login (
+$sql = "CREATE TABLE IF NOT EXISTS login (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
-    password VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
 )";
 
 if ($conn->query($sql) === TRUE) {
@@ -36,7 +36,5 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Erro ao criar a tabela de login: " . $conn->error;
 }
-
-
 
 ?>
