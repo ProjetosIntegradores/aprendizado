@@ -1,2 +1,3 @@
 # aprendizado
-Aprendendo a criar um banco de dados funcional e responsivo
+Aprendendo a criar um banco de dados funcional e responsivo...
+Depois de muito sofrimento, consegui fazer o Xampp conectar a um arquivo php, com ajuda do Copilot
